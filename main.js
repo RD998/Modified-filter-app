@@ -18,6 +18,8 @@ nosex=0;
 nosey=0;
 eyex=0;
 eyey=0;
+eye2x=0
+difference_x_mask=0;
 next3=0;
 rightwristx=0;
 leftwristx=0;
@@ -44,10 +46,12 @@ nosex=results[0].pose.nose.x;
 nosey=results[0].pose.nose.y;
 eyex=results[0].pose.leftEye.x;
 eyey=results[0].pose.leftEye.y;
+eye2x=results[0].pose.rightEye.x;
 leftwristx=results[0].pose.leftWrist.x;
 rightwristx=results[0].pose.rightWrist.x;
 rightwristy=results[0].pose.rightWrist.y;
 difference=floor(leftwristx-rightwristx);
+difference_x_mask=floor(eye2x-eyex);
 console.log(difference);
 
 }
@@ -92,22 +96,22 @@ if (next11==2){
 
 
  if(next1==1){
-    image(imagee2,nosex-138,nosey-265,320,380);
+    image(imagee2,nosex-90,nosey-240,difference_x_mask+300,350);
     //next1=next1=2;
     console.log(next1);
 }
 if (next1==2){
-    image(imagee3,nosex-280,nosey-345,600,460);
+    image(imagee3,nosex-90,nosey-255,difference_x_mask+300,350);
    // next1=next1=3;
     console.log(next1);
 }
  if(next1==3){
-    image(imagee4,nosex-125,nosey-280,290,500);
+    image(imagee4,nosex-90,nosey-240,difference_x_mask+300,400);
    console.log(next1);
 
 }
  if(next1==4){
-    image(imagee5,nosex-80,nosey-250,240,260);
+    image(imagee5,nosex-70,nosey-290,difference_x_mask+300,350);
     }
     
 
