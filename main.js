@@ -10,11 +10,7 @@ imaged5=loadImage("spell4.png");
 imaged6=loadImage("spell5.png");
 imagei=loadImage("gif1.gif");
 imagei=loadImage("gif2.gif");
-
-
-
 }
-
 nosex=0;
 nosey=0;
 eyex=0;
