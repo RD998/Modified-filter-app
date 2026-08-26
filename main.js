@@ -14,6 +14,7 @@ imagei=loadImage("gif2.gif");
 
 
 }
+#fff
 nosex=0;
 nosey=0;
 eyex=0;
