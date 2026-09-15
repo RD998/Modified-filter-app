@@ -119,6 +119,7 @@ if (next1==2){
 
 }
 img1=document.getElementById("img1");
+img2=document.getElementById("img2");
 
 function next(){
     next1=next1+1;
